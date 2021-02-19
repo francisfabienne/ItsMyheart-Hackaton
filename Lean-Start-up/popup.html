@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itsmyart </title>
+    <!-- css ekko -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <!-- css boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/433b90eeeb.js" crossorigin="anonymous"></script>
+    <!-- googlefont -->
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+    <!-- custo css -->
+    <link rel="stylesheet" href="style.css">
+ </head>
+
+ <body>
+    
+    <div  class="pop">
+        <div class="container">
+            <p style="text-align: right;padding-top: 20px;">Revenir à la page d'accueil <a href="index.html"><i style="font-size: 16px; margin-left: 30px;margin-right: 20px;color: #505185" class="fas fa-times-circle"></i></p></a>
+            <br><br>
+            <p style="text-align: center; font-size: 60px; color: #505185; margin-top: -15px;"><i class="far fa-check-circle"></i></p>
+    <p style="font-size: 13px;text-align: center; line-height: 10px;" >votre demande est publiée. vous pouvez désormais  consulter son évolution sur votre profil.</p>
+                <a href="" style = "width: 240px; text-decoration: none; color: #fff; margin-left: 220px;"class="btn-acc btn-acc3"><i class="far fa-eye"></i>&nbsp;afficher ma demande</a>
+                <div class="div">
+                    <div class="partager">
+                        <i style="color: #505185;"class="fas fa-share-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <div style="margin-top: 15px;"class="text">
+                            <span style="font-size: 13px; text-decoration: underline;color: #505185">partager votre demande</span> <br>
+                            <span style="font-size: 13px; text-decoration: underline; color: #505185">sur les reseaux sociaux</span>
+                        </div>
+                    </div>
+                </div>
+            </p>
+        </div>
+    </div>
+    
+
+<!-- jquery -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- jsbootstrap -->
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!--  -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<!-- js ekko -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+<!-- custom script -->
+     <script src="./instagramfeed.js"></script>
+     <script>
+       $(document).ready(function(){
+        $("#myForm").submit(function(e){
+             e.preventDefault()
+             var username = $("#username").val()
+          $.instagramFeed({
+              'username': username,
+              'display_biography': true,
+              'display_igtv': true,
+              'display_profile': true,
+              'items': 15,
+              'container': "#instagram-feed-demo"
+
+          });
+         });
+       })
+
+     </script>
+ </body>
+
+</html>
+
+
+
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+   
+   

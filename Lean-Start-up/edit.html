@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itsmyart </title>
+    <!-- css ekko -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <!-- css boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/433b90eeeb.js" crossorigin="anonymous"></script>
+    <!-- googlefont -->
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+    <!-- custo css -->
+    <link rel="stylesheet" href="style.css">
+ </head>
+
+ <body>
+      <!-- header -->
+
+      <header id="top">
+        <div class="container">
+            <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top" id="main-nav">
+              <div class="container">
+                  <a href="index.html" class="navbar-brand">
+        
+                        <div class="block-logo1">
+                            <img src="images/tmp_1613719519159.jpg" alt="logo">
+                        </div>
+        
+                  
+                    
+                  </a>
+                  <!-- button à derouler le menu toggler -->
+                  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <!-- la cible de notre buton pour derouler le menu -->
+                  <div class="collapse navbar-collapse" id="navbarCollapse">
+                     <ul class="navbar-nav ml-auto">
+                         <li class="nav-item mr-3">
+                             <a href="#" class="nav-link">Signaler</a>
+                         </li>
+                         <li class="nav-item mr-3">
+                             <a href="#" class="nav-link">Comment ça marche?</a>
+                         </li>
+                         <li class="nav-item mr-3">
+                             <a href="#" class="nav-link">Apropos de Itsmyart</a>
+                         </li>
+                         <li class="nav-item mr-3">
+                          <a href="#" class="nav-link user">
+                              <i class="fas fa-user"></i>
+                          </a>
+                      </li>
+                     </ul>
+                  </div>
+                  <!-- fin collapse nav -->
+              </div>
+            </nav>
+          </div>
+     </header>
+
+      <!-- fin header -->
+
+     <section class="edit">
+         <div class="container">
+            <div class="connect">
+                <div class="connect-subject">
+                    <p style="cursor: pointer; font-size: 14px;">Clicquer pour ajouter </p>
+                    <p style="cursor: pointer; font-size: 14px;">une publication</p>
+                </div>
+                <div class="connect-user">
+                     <p style="font-size: 14px;">vous êts connecté en tant que</p>
+                     <span style="font-size: 13px;"><i class="fas fa-user user1"></i>&nbsp;&nbsp;@Auteurart</span>
+                </div>
+                <div class="connect-btn">
+                     <p> Abandonner &nbsp;&nbsp;&nbsp;X</p>
+                </div>
+            </div>
+            <div class="cont-edit">
+                <div class="edit-img">
+
+                </div>
+                <div class="text-editor">
+                    <p style="margin-left: 25px;">Définir la situation de départ</p>
+                    <ul class="list-group">
+                        <li style="font-size: 14px;" class="list-group-item"><i class="fas fa-check-square"></i>&nbsp;&nbsp;J'ai dejà contacté la personne en question</li>
+                        <li style="font-size: 14px;" class="list-group-item"><i class="fas fa-check-square"></i>&nbsp;&nbsp;J'ai déjà signalé le post sur le réseaux sociaux</li>
+                    </ul>
+
+                    <p style="margin-top: 55px; font-weight: bolder; margin-left: 25px;">Ajouter des sources &nbsp;&nbsp;&nbsp;<i style="color: #505185; font-size: 24px;" class="fas fa-plus-circle"></i></p>
+
+                    <p style="padding-left: 25px; font-size: 14px;">laisser un message</p>
+                    <div id="editor">
+                      <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="editor-btn">
+                <div class="editor-btn-text">
+                    <p style="margin-top: 35px;">Prévisualiser</p>
+                </div>
+                <div class="btn-editor">
+                    <a href="popup.html" class="btn-acc3" style="color: #fff;text-decoration: none;">Publier</a>
+                </div>
+            </div>
+         </div>
+     </section>
+
+
+        <footer>
+            <div class="blue">
+              <div class="menu">
+                <p>Accueil</p>
+                <p>Comment ça marche</p>
+                <p>A propos</p>
+              </div>
+              <div class="contact">
+
+                <p>Nous contacter</p>
+                <p>Mentions légales</p>
+              </div>
+              <div class="social-media">
+                <p><i class="fab fa-facebook-f"></i></p>
+                <p><i class="fab fa-linkedin-in"></i></p>
+                <p><i class="fab fa-instagram"></i></p>
+                <p><i class="fab fa-twitter"></i></p>
+              </div>
+            </div>
+        </footer>
+
+<!-- jquery -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- jsbootstrap -->
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!--  -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<!-- js ekko -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+<!-- custom script -->
+     <script>
+
+         $("#summernote").summernote();
+     </script>
+ </body>
+
+</html>
